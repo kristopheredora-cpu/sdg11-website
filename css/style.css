@@ -518,7 +518,7 @@ footer {
   color: #fff;
   padding: 20px;
   font-family: Arial, sans-serif;
-  border-top: 4px solid #f1c40f;
+  border-top: 4px solid #00b050f;
 }
 
 .footer-message h2 {
@@ -544,7 +544,7 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  border-top: 1px solid #f1c40f;
+  border-top: 1px solid #00b050;
 }
 
 .footer-section {
@@ -554,14 +554,14 @@ footer {
 
 .footer-section h3 {
   margin-bottom: 10px;
-  color: #f1c40f;
+  color: #00b050;
 }
 
 .footer-bottom {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  border-top: 1px solid #f1c40f;
+  border-top: 1px solid #00b050;
   padding-top: 10px;
 }
 
@@ -598,7 +598,7 @@ footer {
     top: 60px;
     left: 0;
     width: 100vw;
-    background: rgba(255,255,255,0.95);
+    background: #00b050;
     flex-direction: column;
     padding: 40px 0;
     gap: 25px;
@@ -696,38 +696,33 @@ footer {
   }
 
   /* ---------------------- ABOUT ---------------------- */
+  .about-section {
+    padding: 70px 25px;
+    background-attachment: scroll;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
   .about-container {
-    display: flex;
-    flex-direction: column;      /* stack text and cards */
-    align-items: center;         /* center all children horizontally */
-    gap: 30px;                   /* space between text and cards */
-    padding: 0 20px;             /* uniform padding left and right */
-    margin: 0 auto;              /* center container */
-    width: 100%;
-    max-width: 480px;            /* limit max width for readability */
-    box-sizing: border-box;      /* include padding in width */
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
   }
 
   .about-text {
-    text-align: center;          /* center headings and paragraphs */
-    width: 100%;
-    margin: 0 auto;
+    font-size: 16px;
   }
 
   .about-stats {
-    display: flex;
-    flex-direction: column;      /* stack cards vertically */
+    flex-direction: column;
     gap: 20px;
-    width: 100%;
-    align-items: center;         /* center cards horizontally */
   }
 
   .about-card {
-    width: 100%;
-    max-width: 350px;            /* limit card width */
     padding: 25px 20px;
-    text-align: center;          /* center text inside cards */
-    box-sizing: border-box;      /* include padding in width */
   }
 
   .about-card h3 {
