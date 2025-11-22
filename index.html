@@ -10,25 +10,35 @@
 
 
 
-      <body>
 
+      <body>
 
          <header>
             <div class="container">
                <h1 class="logo">
                   <img id="logo-img" src="images/sgdlogo.png" alt="SDG Logo" class="logo-img">
                </h1>
-               <nav>
+
+               <nav class="nav">
+                  <div class="burger">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+
                   <ul class="nav-links">
                      <li><a href="#home">Home</a></li>
                      <li><a href="#about">About</a></li>
                      <li><a href="#targets">Targets</a></li>
-                     <li><a href="#problems">Problems</a></li>
+                     <li><a href="#challenges">Problems</a></li>
                      <li><a href="#solutions">Solutions</a></li>
                   </ul>
                </nav>
             </div>
          </header>
+
+
+
 
 
 
@@ -39,7 +49,6 @@
             </div>
 
             <div class="hero-right">
-
                <div class="hero-head fade-text">
                   <h1 class="hero-number">11th</h1>
                   <span class="hero-small-text">Sustainable Development Goal</span>
@@ -58,6 +67,8 @@
 
 
 
+
+
          <section id="about" class="about-section">
             <div class="about-container">
                <div class="about-text">
@@ -68,17 +79,17 @@
                </div>
 
                <div class="about-stats">
-                  <div class="card1">
+                  <div class="about-card">
                      <h3>55%</h3>
                      <p class="small">of the world's population live in cities</p>
                   </div>
 
-                  <div class="card1">
+                  <div class="about-card">
                      <h3>1B+</h3>
                      <p class="small">people live in slums or informal settlements</p>
                   </div>
 
-                  <div class="card1">
+                  <div class="about-card">
                      <h3>70%</h3>
                      <p class="small">of global carbon emissions come from cities</p>
                   </div>
@@ -89,7 +100,9 @@
 
 
 
-         <section id="targets" class="targets">
+
+
+         <section id="targets" class="targets shared-bg">
             <h2>TARGETS</h2>
             <p class="targets-sub">Targets highlighting the priorities for sustainable urban development and improved quality of life in cities.</p>
 
@@ -130,7 +143,7 @@
                   <img src="images/target11.5.jpg" alt="REDUCE THE ADVERSE EFFECTS OF NATURAL DISASTERS">
                   <div class="target-info">
                      <h3>REDUCE THE ADVERSE EFFECTS OF NATURAL DISASTERS</h3>
-                     <p>By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global gross domestic product caused by disasters, including water-related disasters, with a focus on protecting the poor and people in vulnerable situations.</p>
+                     <p>By 2030, significantly reduce deaths, impacts, and economic losses caused by disasters, especially for vulnerable communities.</p>
                   </div>
                </div>
 
@@ -138,7 +151,7 @@
                   <img src="images/target11.6.jpg" alt="REDUCE THE ENVIRONMENTAL IMPACT OF CITIES">
                   <div class="target-info">
                      <h3>REDUCE THE ENVIRONMENTAL IMPACT OF CITIES</h3>
-                     <p>By 2030, reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management.</p>
+                     <p>By 2030, reduce the environmental impact of cities with focus on air quality and waste management.</p>
                   </div>
                </div>
 
@@ -146,7 +159,7 @@
                   <img src="images/target11.7.jpg" alt="PROVIDE ACCESS TO SAFE AND INCLUSIVE GREEN AND PUBLIC SPACES">
                   <div class="target-info">
                      <h3>PROVIDE ACCESS TO SAFE AND INCLUSIVE GREEN AND PUBLIC SPACES</h3>
-                     <p>By 2030, provide universal access to safe, inclusive and accessible, green and public spaces, in particular for women and children, older persons and persons with disabilities.</p>
+                     <p>By 2030, provide universal access to safe, inclusive and accessible public green spaces.</p>
                   </div>
                </div>
 
@@ -154,7 +167,7 @@
                   <img src="images/target11.8.jpg" alt="STRONG NATIONAL AND REGIONAL DEVELOPMENT PLANNING">
                   <div class="target-info">
                      <h3>STRONG NATIONAL AND REGIONAL DEVELOPMENT PLANNING</h3>
-                     <p>Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional development planning.</p>
+                     <p>Support positive links among urban, peri-urban and rural areas through national and regional planning.</p>
                   </div>
                </div>
 
@@ -162,7 +175,7 @@
                   <img src="images/target11.9.jpg" alt="IMPLEMENT POLICIES FOR INCLUSION, RESOURCE EFFICIENCY AND DISASTER RISK REDUCTION">
                   <div class="target-info">
                      <h3>IMPLEMENT POLICIES FOR INCLUSION, RESOURCE EFFICIENCY AND DISASTER RISK REDUCTION</h3>
-                     <p>By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015–2030, holistic disaster risk management at all levels.</p>
+                     <p>Increase cities adopting climate adaptation, disaster resilience, and sustainable urban planning policies.</p>
                   </div>
                </div>
 
@@ -170,7 +183,7 @@
                   <img src="images/target11.a.jpg" alt="SUPPORT LEAST DEVELOPED COUNTRIES IN SUSTAINABLE AND RESILIENT BUILDING">
                   <div class="target-info">
                      <h3>SUPPORT LEAST DEVELOPED COUNTRIES IN SUSTAINABLE AND RESILIENT BUILDING</h3>
-                     <p>Support least developed countries, including through financial and technical assistance, in building sustainable and resilient buildings utilizing local materials.</p>
+                     <p>Assist least developed countries in building sustainable, resilient structures using local materials.</p>
                   </div>
                </div>
             </div>
@@ -180,23 +193,25 @@
 
 
 
-         <section id="problems" class="section alt">
-            <h2><i class="fa-solid fa-triangle-exclamation"></i> Challenges We Face</h2>
 
-            <div class="cards">
-               <div class="card fade-in">
+         <section id="challenges" class="section shared-bg">
+            <h2 class="challenges-h2">CHALLENGES WE FACE</h2>
+            <p class="challenges-sub">Key Issues Affecting Sustainable Cities Today.</p>
+
+            <div class="challenges-container">
+               <div class="challenges-card">
                   <i class="fa-solid fa-smog"></i>
                   <h3>Urban Pollution</h3>
                   <p>Increasing vehicles and industries contribute to unsafe air and noise levels.</p>
                </div>
 
-               <div class="card fade-in">
+               <div class="challenges-card">
                   <i class="fa-solid fa-people-group"></i>
                   <h3>Overpopulation</h3>
                   <p>Uncontrolled growth leads to congestion, lack of housing, and unsafe living conditions.</p>
                </div>
 
-               <div class="card fade-in">
+               <div class="challenges-card">
                   <i class="fa-solid fa-trash"></i>
                   <h3>Waste Management</h3>
                   <p>Poor waste disposal harms city health and natural ecosystems.</p>
@@ -208,23 +223,25 @@
 
 
 
-         <section id="solutions" class="section">
-            <h2><i class="fa-solid fa-lightbulb"></i> Solutions for the Future</h2>
-            <div class="cards">
 
-               <div class="card fade-in">
+         <section id="solutions" class="section shared-bg">
+            <h2 class="solutions-h2">Solutions for the Future</h2>
+            <p class="solutions-sub">Innovative Approaches to Build Sustainable Cities.</p>
+
+            <div class="solutions-container">
+               <div class="solutions-card">
                   <i class="fa-solid fa-tree-city"></i>
                   <h3>Green Infrastructure</h3>
                   <p>Encouraging more green spaces and sustainable transportation systems.</p>
                </div>
 
-               <div class="card fade-in">
+               <div class="solutions-card">
                   <i class="fa-solid fa-recycle"></i>
                   <h3>Smart Waste Systems</h3>
                   <p>Promoting recycling and energy-efficient waste solutions.</p>
                </div>
 
-               <div class="card fade-in">
+               <div class="solutions-card">
                   <i class="fa-solid fa-house-chimney-user"></i>
                   <h3>Affordable Housing</h3>
                   <p>Ensuring everyone has access to safe and affordable homes.</p>
@@ -235,9 +252,33 @@
 
 
 
+
+
          <footer>
-            <p>© 2025 SDG 11 | Sustainable Cities and Communities | Website by topethegreat</p>
+            <div class="footer-message">
+               <h2>Join Us in Making Cities Sustainable!</h2>
+               <p>Together we can build sustainable cities and communities for a better future.</p>
+            </div>
+
+            <div class="footer-content">
+               <div class="footer-section">
+                  <h3>About Us</h3>
+                  <p>We are a student-led initiative raising awareness for SDG 11: Sustainable Cities and Communities.</p>
+               </div>
+
+               <div class="footer-section">
+                  <h3>Contact</h3>
+                  <p>Email: 202510763@gordoncollege.edu.ph</p>
+                  <p>Phone: +63 960 827 4743</p>
+               </div>
+            </div>
+
+            <div class="footer-bottom">
+               © 2025 SDG 11 Project. All Rights Reserved.
+            </div>
          </footer>
+
+
 
 
 
@@ -245,5 +286,4 @@
          <script src="js/script.js"></script>
 
       </body>
-
    </html>

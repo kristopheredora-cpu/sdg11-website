@@ -42,19 +42,7 @@ body {
   overflow-x: hidden;
 }
 
-h2 {
-  font-size: 42px;
-  font-weight: 800;
-  color: #201918;
-  margin-bottom: 25px;
-}
 
-p {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 25px;
-  color: #201918;
-}
 
 
 
@@ -76,7 +64,6 @@ header.scrolled {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-header.scrolled .logo,
 header.scrolled .nav-links a {
   color: #ffffff;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
@@ -131,10 +118,6 @@ header.scrolled .nav-links a::after {
   background-color: #00b050;
 }
 
-header.scrolled .nav-links a {
-  color: #000000;
-}
-
 
 
 
@@ -186,6 +169,7 @@ header.scrolled .nav-links a {
   font-weight: 600;
   color: #3b2d2a;
   max-width: 150px;
+  text-align: left;
 }
 
 .hero-title {
@@ -194,6 +178,7 @@ header.scrolled .nav-links a {
   margin: 10px 0 20px;
   color: #1f1614;
   max-width: 520px;
+  text-align: left;
 }
 
 .hero-sub {
@@ -201,6 +186,7 @@ header.scrolled .nav-links a {
   color: #3b2d2a;
   margin-bottom: 30px;
   max-width: 480px;
+  text-align: left;
 }
 
 .hero-btn {
@@ -212,6 +198,7 @@ header.scrolled .nav-links a {
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s ease;
+  text-align: left;
 }
 
 .hero-btn:hover {
@@ -250,6 +237,7 @@ header.scrolled .nav-links a {
 .about-text {
   flex: 1;
   min-width: 300px;
+  font-size: 25px;
 }
 
 .about-stats {
@@ -260,7 +248,7 @@ header.scrolled .nav-links a {
   min-width: 280px;
 }
 
-.card1 {
+.about-card {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   background: rgba(0, 0, 0, 0.1);
@@ -275,7 +263,7 @@ header.scrolled .nav-links a {
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.card1 h3 {
+.about-card h3 {
   font-size: 28px;
   font-weight: 700;
   margin: 0 0 10px;
@@ -283,13 +271,13 @@ header.scrolled .nav-links a {
   transition: color 0.3s ease;
 }
 
-.card1 p {
+.about-card1 p {
   font-size: 15px;
   color: #fffefe;
   transition: color 0.3s ease;
 }
 
-.card1:hover {
+.about-card:hover {
   background-color: #00b050;
   color: white;
   transform: translateY(-5px);
@@ -298,18 +286,21 @@ header.scrolled .nav-links a {
     0 8px 20px rgba(0,0,0,0.25);
 }
 
-.card1:hover h3,
-.card1:hover p {
+.about-card:hover h3,
+.about-card:hover p {
   color: white;
 }
 
 
 
 
-.targets {
-  padding: 60px 60px;
+.shared-bg {
   background: url('../images/BG2.jpg') no-repeat center center/cover;
   background-attachment: fixed;
+}
+
+.targets {
+  padding: 60px 60px;
 }
 
 .targets h2 {
@@ -417,22 +408,95 @@ header.scrolled .nav-links a {
   text-align: center;
 }
 
-.section.alt {
-  background-color: #ffffff;
+
+
+.challenges-h2 {
+  font-size: 4rem;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 5px 15px #000000;
 }
 
+.challenges-sub {
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 5px 15px #000000;
+  margin-bottom: 50px;
+}
 
-
-
-.cards {
+.challenges-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 25px;
   flex-wrap: wrap;
   margin-top: 60px;
 }
 
-.card {
+
+.challenges-card {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  cursor: default;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 2px solid #465800;
+}
+
+.challenges-card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.challenges-card p {
+  font-size: 15px;
+  color: #fffefe;
+  transition: color 0.3s ease;
+}
+
+.challenges-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 12px 28px #00b050;
+}
+
+
+
+.solutions-h2 {
+  font-size: 4rem;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 5px 15px #000000;
+}
+
+.solutions-sub {
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 5px 15px #000000;
+  margin-bottom: 50px;
+}
+
+.solutions-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.solutions-card {
   background: #ffffff;
   border-radius: 12px;
   padding: 32px;
@@ -441,7 +505,7 @@ header.scrolled .nav-links a {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card:hover {
+.solutions-card:hover {
   transform: translateY(-12px) scale(1.03);
   box-shadow: 0 12px 28px rgba(85, 53, 28, 0.25);
 }
@@ -450,13 +514,335 @@ header.scrolled .nav-links a {
 
 
 footer {
-  background-color: #00b050;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
+  background: #465800;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-top: 4px solid #f1c40f;
 }
 
-footer p {
+.footer-message h2 {
+  font-size: 32px;
   color: #ffffff;
-  font-size: 15px;
+  text-align: center;
+  text-shadow: 0 5px 15px #000000;
 }
+
+.footer-message p {
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 5px 15px #000000;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  text-align: left; 
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-top: 1px solid #f1c40f;
+}
+
+.footer-section {
+  width: 45%;
+  min-width: 250px; 
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #f1c40f;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-top: 1px solid #f1c40f;
+  padding-top: 10px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+  /* ---------------------- GLOBAL FIXES ---------------------- */
+  * {
+    box-sizing: border-box;
+  }
+
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* ---------------------- HEADER ---------------------- */
+  header {
+    width: 100vw;
+    left: 0;
+    padding: 10px 15px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed; /* overlay menu */
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    background: rgba(255,255,255,0.95);
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li a {
+    font-size: 18px;
+    padding: 10px 0;
+    display: block;
+    color: #000;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+  }
+
+  .burger span {
+    width: 26px;
+    height: 3px;
+    background: #000;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .burger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  /* ---------------------- HERO ---------------------- */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 120px 20px 60px;
+  }
+
+  .hero-left,
+  .hero-right {
+    flex: 1;
+  }
+
+  .hero-building {
+    width: 70%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .hero-number {
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  .hero-small-text {
+    font-size: 16px;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 24px;
+    line-height: 1.2;
+    max-width: 300px;
+    margin: 10px auto 15px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    max-width: 280px;
+    margin: 0 auto 20px;
+  }
+
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* ---------------------- ABOUT ---------------------- */
+  .about-container {
+    display: flex;
+    flex-direction: column;      /* stack text and cards */
+    align-items: center;         /* center all children horizontally */
+    gap: 30px;                   /* space between text and cards */
+    padding: 0 20px;             /* uniform padding left and right */
+    margin: 0 auto;              /* center container */
+    width: 100%;
+    max-width: 480px;            /* limit max width for readability */
+    box-sizing: border-box;      /* include padding in width */
+  }
+
+  .about-text {
+    text-align: center;          /* center headings and paragraphs */
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-stats {
+    display: flex;
+    flex-direction: column;      /* stack cards vertically */
+    gap: 20px;
+    width: 100%;
+    align-items: center;         /* center cards horizontally */
+  }
+
+  .about-card {
+    width: 100%;
+    max-width: 350px;            /* limit card width */
+    padding: 25px 20px;
+    text-align: center;          /* center text inside cards */
+    box-sizing: border-box;      /* include padding in width */
+  }
+
+  .about-card h3 {
+    font-size: 20px;
+  }
+
+  .about-card p {
+    font-size: 14px;
+  }
+
+  /* ---------------------- TARGETS ---------------------- */
+  .targets {
+    padding: 50px 20px;
+  }
+
+  .targets h2 {
+    font-size: 2.5rem;
+  }
+
+  .targets-sub {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .targets-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .target-card {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .target-card img {
+    width: 120px;
+    height: 160px;
+  }
+
+  .target-info h3 {
+    font-size: 1rem;
+  }
+
+  .target-info p {
+    font-size: 0.85rem;
+  }
+
+  /* ---------------------- CHALLENGES & SOLUTIONS ---------------------- */
+  .section {
+    padding: 60px 20px;
+  }
+
+  .challenges-h2,
+  .solutions-h2 {
+    font-size: 2rem;
+  }
+
+  .challenges-sub,
+  .solutions-sub {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .challenges-container,
+  .solutions-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .challenges-card,
+  .solutions-card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .challenges-card h3,
+  .solutions-card h3 {
+    font-size: 18px;
+  }
+
+  .challenges-card p,
+  .solutions-card p {
+    font-size: 14px;
+  }
+
+  /* ---------------------- FOOTER ---------------------- */
+  footer {
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .footer-message h2 {
+    font-size: 24px;
+  }
+
+  .footer-message p {
+    font-size: 14px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+}
+
