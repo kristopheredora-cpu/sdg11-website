@@ -518,7 +518,7 @@ footer {
   color: #fff;
   padding: 20px;
   font-family: Arial, sans-serif;
-  border-top: 4px solid #00b050f;
+  border-top: 4px solid #00b050;
 }
 
 .footer-message h2 {
@@ -598,7 +598,7 @@ footer {
     top: 60px;
     left: 0;
     width: 100vw;
-    background: #00b050;
+    background: rgba(77, 73, 73, 0.95);
     flex-direction: column;
     padding: 40px 0;
     gap: 25px;
