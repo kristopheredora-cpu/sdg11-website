@@ -223,7 +223,7 @@ header.scrolled .nav-links a {
 
 .about-section {
   padding: 145px 60px;
-  background: url('../images/BG2.jpg') no-repeat center center/cover;
+  background: url('../images/BG.jpg') no-repeat center center/cover;
   background-attachment: fixed;
 }
 
@@ -308,7 +308,7 @@ header.scrolled .nav-links a {
 
 .targets {
   padding: 60px 60px;
-  background: url('../images/BG.jpg') no-repeat center center/cover;
+  background: url('../images/BG2.jpg') no-repeat center center/cover;
   background-attachment: fixed;
 }
 
