@@ -654,8 +654,7 @@ footer {
     position: relative;
   }
 
-  .nav-links,
-  .nav-links a {
+  .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
