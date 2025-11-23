@@ -308,6 +308,7 @@ header.scrolled .nav-links a::after {
   color: #ffffff;
   text-align: center;
   text-shadow: 0 5px 15px #000000;
+  margin-bottom: 10px;
 }
 
 .targets-sub {
@@ -316,6 +317,7 @@ header.scrolled .nav-links a::after {
   text-align: center;
   text-shadow: 0 5px 15px #000000;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .targets-grid {
@@ -412,6 +414,7 @@ header.scrolled .nav-links a::after {
 
 .challenges-h2 {
   font-size: 4rem;
+  margin-bottom: 10px;
   color: #ffffff;
   text-align: center;
   text-shadow: 0 5px 15px #000000;
@@ -419,6 +422,7 @@ header.scrolled .nav-links a::after {
 
 .challenges-sub {
   font-size: 22px;
+  margin-top: 0px;
   color: #ffffff;
   text-align: center;
   text-shadow: 0 5px 15px #000000;
@@ -472,8 +476,10 @@ header.scrolled .nav-links a::after {
 
 
 
+
 .solutions-h2 {
   font-size: 4rem;
+  margin-bottom: 10px;
   color: #ffffff;
   text-align: center;
   text-shadow: 0 5px 15px #000000;
@@ -481,34 +487,88 @@ header.scrolled .nav-links a::after {
 
 .solutions-sub {
   font-size: 22px;
+  margin-top: 0px;
   color: #ffffff;
   text-align: center;
   text-shadow: 0 5px 15px #000000;
   margin-bottom: 50px;
 }
 
-.solutions-container {
+.solutions-card-group {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   gap: 25px;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .solutions-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 32px;
-  box-shadow: 0 5px 12px rgba(85, 53, 28, 0.15);
-  width: 300px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  width: 220px;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
-.solutions-card:hover {
-  transform: translateY(-12px) scale(1.03);
-  box-shadow: 0 12px 28px rgba(85, 53, 28, 0.25);
+.solutions-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
 }
+
+.solutions-layer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.solutions-info {
+  position: absolute;
+  bottom: -40%;
+  padding: 20px;
+  color: #ffffff;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.solutions-info h1 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  text-align: left;
+}
+
+.solutions-info p {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.solutions-card:hover img {
+  transform: scale(1.15);
+}
+
+.solutions-card:hover .solutions-layer {
+  opacity: 1;
+}
+
+.solutions-card:hover .solutions-info {
+  bottom: 10%;
+  opacity: 1;
+}
+
+.solutions-card-group:hover .solutions-card:not(:hover) {
+  filter: blur(4px);
+  opacity: 0.65;
+  transform: scale(0.95);
+}
+
 
 
 
@@ -569,9 +629,10 @@ footer {
 
 
 
+
+
 @media (max-width: 768px) {
 
-  /* ---------------------- GLOBAL FIXES ---------------------- */
   * {
     box-sizing: border-box;
   }
@@ -581,7 +642,9 @@ footer {
     width: 100%;
   }
 
-  /* ---------------------- HEADER ---------------------- */
+
+
+
   header {
     width: 100vw;
     left: 0;
@@ -647,7 +710,9 @@ footer {
     transform: rotate(-45deg) translate(6px, -6px);
   }
 
-  /* ---------------------- HERO ---------------------- */
+
+
+
   .hero {
     flex-direction: column;
     text-align: center;
@@ -695,7 +760,9 @@ footer {
     font-size: 14px;
   }
 
-  /* ---------------------- ABOUT ---------------------- */
+
+
+
   .about-section {
     padding: 70px 25px;
     background-attachment: scroll;
@@ -733,7 +800,9 @@ footer {
     font-size: 14px;
   }
 
-  /* ---------------------- TARGETS ---------------------- */
+
+
+
   .targets {
     padding: 50px 20px;
   }
@@ -772,7 +841,9 @@ footer {
     font-size: 0.85rem;
   }
 
-  /* ---------------------- CHALLENGES & SOLUTIONS ---------------------- */
+  
+
+
   .section {
     padding: 60px 20px;
   }
@@ -812,7 +883,9 @@ footer {
     font-size: 14px;
   }
 
-  /* ---------------------- FOOTER ---------------------- */
+
+
+
   footer {
     text-align: center;
     padding: 20px 15px;
@@ -840,4 +913,3 @@ footer {
     padding-top: 10px;
   }
 }
-

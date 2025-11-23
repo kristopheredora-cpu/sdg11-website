@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".burger");
   const navLinks = document.querySelector(".nav-links");
 
-  // --- HEADER SCROLL EFFECT ---
   function updateHeader() {
     if (hero) {
       if (window.scrollY > hero.offsetHeight - 50) {
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", updateHeader);
   updateHeader();
 
-  // --- BURGER MENU ---
   if (burger && navLinks) {
     burger.addEventListener("click", () => {
       navLinks.classList.toggle("active");
