@@ -657,15 +657,18 @@ footer {
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 30%;
     position: fixed;
     top: 60px;
-    left: 0;
+    right: 10px;
     background: rgba(0,0,0,0.35);
     backdrop-filter: blur(12px);
-    padding: 30px 0;
-    text-align: center;
-    gap: 25px;
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(75, 117, 15, 0.6);
+    padding: 12px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    gap: 10px;
   }
 
   .nav-links.active {
@@ -673,8 +676,8 @@ footer {
   }
 
   .nav-links li a {
-    font-size: 18px;
-    padding: 10px 0;
+    font-size: 12px;
+    padding: 6px 0;
     display: block;
     color: #ffffff;
     font-weight: 600;
